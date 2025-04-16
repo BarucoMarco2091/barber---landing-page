@@ -1,0 +1,52 @@
+@import '../styles/responsivity.scss';
+@import '../styles/variables.scss';
+
+@keyframes pulse {
+    from {
+        transform: scale(1) translateY(0);
+    }
+
+    to {
+        transform: scale(1.1) translateY(-8px);
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    .footer-icons {
+        margin-top: 5dvh;
+
+        i {
+            color: $gold;
+            margin-right: 2dvh;
+            transition: color .9s;
+        }
+
+        i:hover {
+            color: $red;
+            animation: pulse 1s infinite alternate;
+        }
+    }
+
+    .footer-logo {
+        margin-top: 5dvh;
+
+        i {
+            color: $gold;
+            font-size: 1.5rem;
+        }
+    }
+
+    .footer-info {
+        p {
+            color: $gold;
+            margin: 5dvh 3dvh;
+        }
+    }
+}

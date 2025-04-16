@@ -1,0 +1,35 @@
+@import '../styles/variables.scss';
+
+@media (width >= 1024px) {
+    nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        padding: 3dvh 3dvh;
+    }
+}
+
+@media (width >= 1024px) {
+    .hero {
+        span {
+            width: 55dvh !important;
+            margin: 5dvh 5dvh !important;
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .about {
+        display: flex;
+        flex-direction: row !important;
+    }
+}
+
+@media (width >= 1024px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
